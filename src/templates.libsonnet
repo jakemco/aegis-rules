@@ -15,7 +15,7 @@
       when: error 'must override when',
       target: error 'must override target',
       effect: error 'must override effect',
-      restrictions: '',
+      restrictions: null,
     },
   },
 
