@@ -10,6 +10,7 @@ import { existsSync } from "fs";
 const ajv = new Ajv({
   allErrors: true,
   verbose: true,
+  allowUnionTypes: true,
 });
 
 type JSONObject = Record<string, unknown>;
@@ -97,7 +98,7 @@ async function validateFaction(
   // validate all units
   for (const [unitName, unit] of Object.entries(units)) {
     for (const unitError of await validateUnit(factionData, unit)) {
-      errors.push(error("units", "%s: %s", unitName, unitError));
+      errors.push(error("units", "'%s': %s", unitName, unitError));
     }
   }
 
@@ -164,8 +165,13 @@ async function validateUnit(faction: Faction, unit: Unit): Promise<string[]> {
 
   // Check that all wargear on the back of the card shows up on the front
   const wargearNames = new Set(
+    // the base wargear for the unit
     unit.wargear
+      // plus anything that specific models gain extra
       .concat(unit.composition.map((c) => c.extraWargear).flat())
+      // plus anything they can swap out for
+      .concat(unit.options.map((o) => o.gain.flat()).flat())
+      // and just pull the names, leave out the numbers for now
       .map((w) => w.type)
   );
   for (const wargearName of wargearNames) {

@@ -20,7 +20,6 @@
   },
 
   Unit:: {
-    name: error 'must override name',
     models: error 'must override models',
     abilities: t.Abilities,
     keywords: [],
@@ -59,6 +58,20 @@
     melee: {},
   },
 
+  Weapon:: {
+    abilities: [],
+    range: error 'must override range',
+    attacks: error 'must override attacks',
+    hitSkill: error 'must override hitSkill',
+    strength: error 'must override strength',
+    ap: error 'must override ap',
+    damage: error 'must override damage',
+  },
+
+  MeleeWeapon:: t.Weapon{
+    range: null,
+  },
+
   Composition:: {
     name: error 'must override name',
     min: error 'must override number',
@@ -70,8 +83,5 @@
     num: num,
     type: type,
   },
-
-  
-
 
 }

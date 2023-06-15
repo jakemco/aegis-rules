@@ -5,7 +5,6 @@ export interface Units {
 }
 
 export interface Unit {
-  name: string;
   models: Model[];
   abilities: {
     core: string[];
@@ -44,7 +43,13 @@ export interface Ability {
 }
 
 export interface Weapon {
-  // TODO
+  abilities: string[];
+  range: integer | null;
+  attacks: integer | string;
+  hitSkill: integer | null;
+  strength: integer;
+  ap: integer;
+  damage: integer | string;
 }
 
 export interface Composition {
@@ -59,6 +64,12 @@ export interface Wargear {
   type: string;
 }
 
+// TODO: many more kinds of this
 export interface Option {
+  forEach: integer | null;
+  num: integer;
+  type: string;
+  lose: Wargear[];
+  gain: Wargear[][];
   // TODO
 }
