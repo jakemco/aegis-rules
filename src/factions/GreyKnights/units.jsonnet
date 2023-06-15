@@ -35,7 +35,7 @@ local t = import '../../templates.libsonnet';
         max: 9,
       },
     ],
-    wargear: ['storm bolter', 'Nemesis force weapon'],
-    options: ['TODO'],
+    wargear: [t.Wargear('storm bolter'), t.Wargear('Nemesis force weapon')],
+    options: [], // TODO
   },
 }

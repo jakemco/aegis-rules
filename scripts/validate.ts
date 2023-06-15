@@ -3,7 +3,7 @@ import path from "path";
 import util from "util";
 
 import Ajv from "ajv";
-import { Units } from "../types/units";
+import { Units, Unit, Weapon } from "../types/units";
 import { Faction } from "../types/faction";
 import { existsSync } from "fs";
 
@@ -96,9 +96,106 @@ async function validateFaction(
 
   // validate all units
   for (const [unitName, unit] of Object.entries(units)) {
-    // TODO: validate that there are no extraneous weapons in options or loadout, etc.
-    if (false) {
-      errors.push(error("units", "Test Error for %s", "this"));
+    for (const unitError of await validateUnit(factionData, unit)) {
+      errors.push(error("units", "%s: %s", unitName, unitError));
+    }
+  }
+
+  return errors;
+}
+
+async function validateUnit(faction: Faction, unit: Unit): Promise<string[]> {
+  const errors = [];
+
+  // when there are multiple model types, we need to check their names
+  if (unit.models.length > 1) {
+    // Each model name should be unique and non-null
+    const modelNames = new Set<string>();
+    for (const [idx, model] of unit.models.entries()) {
+      if (model.name == null) {
+        errors.push(util.format("Model index %d is missing a name", idx));
+      } else if (modelNames.has(model.name)) {
+        errors.push(
+          util.format("Duplicate model name '%s' on index %d", model.name, idx)
+        );
+      } else {
+        modelNames.add(model.name);
+      }
+    }
+
+    // Additionally, they should match the names in the composition list
+    const compNames = new Set(unit.composition.map((c) => c.name));
+    if (
+      modelNames.size !== compNames.size ||
+      ![...modelNames].every((m) => compNames.has(m))
+    ) {
+      errors.push("Mismatch between model names and composition names");
+    }
+  }
+
+  // Check composition details
+  const compNames = new Set();
+  for (const [idx, comp] of unit.composition.entries()) {
+    // Composition names should be unique
+    if (compNames.has(comp.name)) {
+      errors.push(
+        util.format(
+          "Duplicate composition name '%s' on index %d",
+          comp.name,
+          idx
+        )
+      );
+    } else {
+      compNames.add(comp.name);
+    }
+
+    // While we're here, check that min and max are sensical
+    if (comp.min > comp.max) {
+      errors.push(
+        util.format(
+          "Composition for '%s' has min %d greater than max %d",
+          comp.name,
+          comp.min,
+          comp.max
+        )
+      );
+    }
+  }
+
+  // Check that all wargear on the back of the card shows up on the front
+  const wargearNames = new Set(
+    unit.wargear
+      .concat(unit.composition.map((c) => c.extraWargear).flat())
+      .map((w) => w.type)
+  );
+  for (const wargearName of wargearNames) {
+    if (
+      !unit.abilities.wargear.map((a) => a.name).includes(wargearName) &&
+      !Object.keys(unit.weapons.ranged).includes(wargearName) &&
+      !Object.keys(unit.weapons.melee).includes(wargearName)
+    ) {
+      errors.push(
+        util.format(
+          "Wargear '%s' appears in loadout but not in weapons or abilities",
+          wargearName
+        )
+      );
+    }
+  }
+
+  // Check that every weapon on the front shows up somewhere in wargear on the back
+  const allWeapons = ([] as [string, Weapon][]).concat(
+    Object.entries(unit.weapons.ranged),
+    Object.entries(unit.weapons.melee)
+  );
+  for (const [weaponName, weapon] of allWeapons) {
+    if (!wargearNames.has(weaponName)) {
+      errors.push(
+        util.format(
+          "Weapon '%s' is not listed in any wargear options",
+          weaponName
+        )
+      );
     }
   }
 

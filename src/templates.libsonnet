@@ -19,21 +19,6 @@
     },
   },
 
-  Model:: {
-    name: null,
-    stats: t.Stats,
-    extraKeywords: [],
-  },
-
-  Stats:: {
-      movement: error 'must override movement',
-      toughness: error 'must override toughness',
-      armorSave: error 'must override armorSave',
-      wounds: error 'must override wounds',
-      leadership: error 'must override leadership',
-      objectiveControl: error 'must override objectiveControl',
-  },
-
   Unit:: {
     name: error 'must override name',
     models: error 'must override models',
@@ -46,17 +31,32 @@
     options: [],
   },
 
+  Model:: {
+    name: null,
+    stats: t.Stats,
+    extraKeywords: [],
+  },
+
+  Stats:: {
+    movement: error 'must override movement',
+    toughness: error 'must override toughness',
+    armorSave: error 'must override armorSave',
+    wounds: error 'must override wounds',
+    leadership: error 'must override leadership',
+    objectiveControl: error 'must override objectiveControl',
+  },
+
   Abilities:: {
-      core: [],
-      faction: [],
-      other: [],
-      wargear: [],
-      invlunSave: null,
+    core: [],
+    faction: [],
+    other: [],
+    wargear: [],
+    invlunSave: null,
   },
 
   Weapons:: {
-    ranged: [],
-    melee: [],
+    ranged: {},
+    melee: {},
   },
 
   Composition:: {
@@ -65,6 +65,13 @@
     max: self.min,
     extraWargear: [],
   },
+
+  Wargear(type, num=1):: {
+    num: num,
+    type: type,
+  },
+
+  
 
 
 }
