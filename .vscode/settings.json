@@ -1,22 +1,5 @@
 {
-  "prettier.prettierPath": "./node_modules/prettier",
-  "[typescript]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[jsonnet]": {
     "editor.tabSize": 2
   },
-  "[json]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
 }

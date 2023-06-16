@@ -26,8 +26,6 @@ TODO: discord or something?
 
 ## Dev Env Setup
 
-### Python / Jsonnet
-
 You'll need python to build the rules, on Ubuntu/Debian:
 
 `sudo apt update && sudo apt install python3 python3-pip`
@@ -36,11 +34,6 @@ Install the jsonnet dependency with pip:
 
 `pip3 install -r requirements.txt`
 
-### Javascript / Typescript
-
-TODO: how to install yarn?
-
-`yarn install`
 
 ### Optional setup
 
@@ -60,7 +53,3 @@ Build the rules by running the python script `build.py`:
 
 - `--clean` removes the output dir before doing the build to ensure a clean build
 - `--release` drops the "-dev" from the version number
-
-### TODO: Yarn Bits
-
-`yarn build`
