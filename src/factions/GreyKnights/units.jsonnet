@@ -79,7 +79,15 @@ local GKMeleeWeapons(ws, a) = {
       faction: ['Teleport Assault'],
       other: [
         // TODO: make the psychic bit a tag on the ability? any other tags?
-        t.Rule { name: 'Sanctifying Ritual (Psychic)', body: 'TODO' },
+        t.Rule {
+          name: 'Sanctifying Ritual (Psychic)',
+          body: 'If you control an objective marker at the end of your ' +
+                'Command phase and this unit is within range of that ' +
+                'objective marker, that objective marker remains under your ' +
+                'control, even if you have no models within range of it, ' +
+                'until your opponent controls it at the start or end of any ' +
+                'turn.',
+        },
       ],
     },
     keywords: [
@@ -138,7 +146,12 @@ local GKMeleeWeapons(ws, a) = {
       faction: ['Teleport Assault'],
       other: [
         // TODO: make the psychic bit a tag on the ability? any other tags?
-        t.Rule { name: 'Hammerhand (Psychic)', body: 'TODO' },
+        t.Rule {
+          name: 'Hammerhand (Psychic)',
+          body: 'Each time a model in this unit makes a Charge move, until ' +
+                'the end of the turn, melee weapons equipped by models in ' +
+                'this unit have the [Lethal Hits] ability.',
+        },
       ],
       wargear: [
         t.Rule {
