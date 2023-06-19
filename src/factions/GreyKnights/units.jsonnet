@@ -50,8 +50,8 @@ local GKMeleeWeapons(ws, a) = {
     ap: 0,
     damage: 1,
   },
-
   'Nemesis force weapon': t.MeleeWeapon {
+    abilities: ['Psychic'],
     attacks: a,
     hitSkill: ws,
     strength: 6,
