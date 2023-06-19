@@ -82,10 +82,17 @@ local GKMeleeWeapons(ws, a) = {
         t.Rule { name: 'Sanctifying Ritual (Psychic)', body: 'TODO' },
       ],
     },
-    keywords: ['Infantry', 'Battleline', 'Psyker', 'Grenades', 'Imperium', 'Strike Squad'],
+    keywords: [
+      'Infantry',
+      'Battleline',
+      'Psyker',
+      'Grenades',
+      'Imperium',
+      'Strike Squad',
+    ],
     weapons: {
-      ranged: GKRangedWeapons(3),
-      melee: GKMeleeWeapons(3, 3),
+      ranged: GKRangedWeapons(bs=3),
+      melee: GKMeleeWeapons(ws=3, a=3),
     },
     composition: [
       t.Composition {
@@ -106,10 +113,100 @@ local GKMeleeWeapons(ws, a) = {
         type: 'Grey Knight',
         lose: [t.Wargear('storm bolter'), t.Wargear('Nemesis force weapon')],
         gain: [
-          [t.Wargear('incinerator')], [t.Wargear('close combat weapon')],
-          [t.Wargear('psilencer')], [t.Wargear('close combat weapon')],
-          [t.Wargear('psycannon')], [t.Wargear('close combat weapon')],
+          [t.Wargear('incinerator'), t.Wargear('close combat weapon')],
+          [t.Wargear('psilencer'), t.Wargear('close combat weapon')],
+          [t.Wargear('psycannon'), t.Wargear('close combat weapon')],
         ],
+      },
+    ],
+  },
+  'Brotherhood Terminator Squad': t.Unit {
+    models: [
+      t.Model {
+        stats: t.Stats {
+          movement: 5,
+          toughness: 5,
+          armorSave: 2,
+          wounds: 3,
+          leadership: 6,
+          objectiveControl: 2,
+        },
+      },
+    ],
+    abilities: t.Abilities {
+      core: ['Deep Strike'],
+      faction: ['Teleport Assault'],
+      other: [
+        // TODO: make the psychic bit a tag on the ability? any other tags?
+        t.Rule { name: 'Hammerhand (Psychic)', body: 'TODO' },
+      ],
+      wargear: [
+        t.Rule {
+          name: "Ancient's banner",
+          body: "Add 1 to the Objective Control characteristic of models in the bearer's unit.",
+        },
+        t.Rule {
+          name: 'narthecium',
+          body: "In your Command phase, you can return 1 destroyed model (excluding *Characters*) to the bearer's unit.",
+        },
+
+      ],
+      invulnSave: 4,
+    },
+    keywords: [
+      'Infantry',
+      'Battleline',
+      'Psyker',
+      'Terminator',
+      'Grenades',
+      'Imperium',
+      'Brotherhood Terminator Squad',
+    ],
+    weapons: {
+      ranged: GKRangedWeapons(bs=3),
+      melee: { 'Nemesis force weapon': GKMeleeWeapons(ws=3, a=4)['Nemesis force weapon'] },
+    },
+    composition: [
+      t.Composition {
+        name: 'Terminator Justicar',
+        min: 1,
+      },
+      t.Composition {
+        name: 'Brotherhood Terminator',
+        min: 4,
+        max: 9,
+      },
+    ],
+    wargear: [t.Wargear('storm bolter'), t.Wargear('Nemesis force weapon')],
+    options: [
+      {
+        forEach: 5,
+        num: 1,
+        type: 'Brotherhood Terminator',
+        lose: [t.Wargear('storm bolter')],
+        gain: [
+          [t.Wargear('incinerator')],
+          [t.Wargear('psilencer')],
+          [t.Wargear('psycannon')],
+        ],
+      },
+      {
+        num: 1,
+        type: 'Brotherhood Terminator',
+        prereq: [t.Wargear('storm bolter')],
+        gain: [
+          [t.Wargear("Ancient's banner")],
+        ],
+        mutex: 1,
+      },
+      {
+        num: 1,
+        type: 'Brotherhood Terminator',
+        lose: [t.Wargear('storm bolter')],
+        gain: [
+          [t.Wargear('narthecium')],
+        ],
+        mutex: 1,
       },
     ],
   },
