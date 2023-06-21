@@ -58,7 +58,11 @@
     melee: {},
   },
 
-  Weapon:: {
+  Weapon(profile):: {
+    profiles: {'': profile},
+  },
+
+  WeaponProfile:: {
     abilities: [],
     range: error 'must override range',
     attacks: error 'must override attacks',
@@ -68,7 +72,7 @@
     damage: error 'must override damage',
   },
 
-  MeleeWeapon:: t.Weapon{
+  MeleeWeaponProfile:: t.WeaponProfile {
     range: null,
   },
 

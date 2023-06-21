@@ -42,7 +42,7 @@ t.Unit {
       'storm bolter': gk.RangedWeapons(bs=2)['storm bolter'],
     },
     melee: {
-      'Malleus Argyrum': t.MeleeWeapon {
+      'Malleus Argyrum': t.MeleeWeaponProfile {
         abilities: ['Psychic'],
         attacks: 5,
         hitSkill: 2,

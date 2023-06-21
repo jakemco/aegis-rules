@@ -52,7 +52,7 @@ t.Unit {
       'storm bolter': gk.RangedWeapons(bs=2)['storm bolter'],
     },
     melee: {
-      'the Titansword': t.MeleeWeapon {
+      'the Titansword': t.MeleeWeaponProfile {
         abilities: ['Anti-Daemon 2+', 'Psychic'],
         attacks: 6,
         hitSkill: 2,
