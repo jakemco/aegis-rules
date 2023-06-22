@@ -24,7 +24,7 @@ t.Unit {
         body: "Once per battle, one unit from your army with this ability can be targeted by a Stratagem for 0CP, even if another unit from your army has already been targeted by that Stratagem this phase.",
       },
     ],
-    invlunSave: 4,
+    invulnSave: 4,
   },
 
   keywords: [

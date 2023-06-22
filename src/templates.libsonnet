@@ -50,7 +50,7 @@
     faction: [],
     other: [],
     wargear: [],
-    invlunSave: null,
+    invulnSave: null,
     damagedThreshold: null,
   },
 

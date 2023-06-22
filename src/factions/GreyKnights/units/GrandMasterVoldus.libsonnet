@@ -24,7 +24,7 @@ t.Unit {
         body: "Each time this model's unit is selected to fight, you can select one enemy unit within Engagement Range of this model's unit and roll one D6, adding 2 to the result if that unit has the *Daemon* keyword: on a 4-5, that enemy unit suffers D3 mortal wounds; on a 6+, that enemy unit suffers D3+3 mortal wounds.",
       },
     ],
-    invlunSave: 4,
+    invulnSave: 4,
   },
 
   keywords: [
@@ -42,14 +42,14 @@ t.Unit {
       'storm bolter': gk.RangedWeapons(bs=2)['storm bolter'],
     },
     melee: {
-      'Malleus Argyrum': t.MeleeWeaponProfile {
+      'Malleus Argyrum': t.Weapon(t.MeleeWeaponProfile {
         abilities: ['Psychic'],
         attacks: 5,
         hitSkill: 2,
         strength: 10,
         ap: -2,
         damage: 3,
-      },
+      }),
     },
   },
 

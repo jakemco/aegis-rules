@@ -24,7 +24,7 @@ t.Unit {
         body: "Once per battle, when this model's unit declares a charge in the same turn it was set up as Reinforcements using the Deep Strike ability, add 3 to the Charge roll.",
       },
     ],
-    invlunSave: 4,
+    invulnSave: 4,
   },
 
   keywords: [
@@ -40,7 +40,7 @@ t.Unit {
 
   weapons: {
     ranged: {
-      Scourging: {
+      Scourging: t.Weapon({
         abilities: ['Anti-Daemon 2+', 'Ignores Cover', 'Psychic'],
         range: 18,
         attacks: 3,
@@ -48,18 +48,18 @@ t.Unit {
         strength: 6,
         ap: -2,
         damage: 2,
-      },
+      }),
       'storm bolter': gk.RangedWeapons(bs=2)['storm bolter'],
     },
     melee: {
-      'the Titansword': t.MeleeWeaponProfile {
+      'the Titansword': t.Weapon(t.MeleeWeaponProfile {
         abilities: ['Anti-Daemon 2+', 'Psychic'],
         attacks: 6,
         hitSkill: 2,
         strength: 8,
         ap: -4,
         damage: 3,
-      },
+      }),
     },
   },
 
