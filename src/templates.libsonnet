@@ -51,6 +51,7 @@
     other: [],
     wargear: [],
     invlunSave: null,
+    damagedThreshold: null,
   },
 
   Weapons:: {
