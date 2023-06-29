@@ -12,8 +12,6 @@ aegis uses semantic versioning: major.minor.patch
 
 **Patch Version Change**: Whenever there are minor bug fixes, wording changes, translation fixes, etc. the patch version will bump.
 
-TODO: do I also want to put dates in there, eg: 1.2.3.2023-11-12 (or instead or w/e)
-
 ## Data Model
 
 TODO: describe the data model
@@ -53,3 +51,11 @@ Build the rules by running the python script `build.py`:
 
 - `--clean` removes the output dir before doing the build to ensure a clean build
 - `--release` drops the "-dev" from the version number
+
+## Testing Changes
+
+You can load your changes on https://aegis.jakem.co via `serve.py`.
+
+`./serve.py`
+
+Will start a server on `localhost:4567`, which aegis can read and then display the datasheets from.
