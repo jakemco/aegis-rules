@@ -36,7 +36,6 @@ def main():
             print("removing out directory")
         shutil.rmtree("out")
 
-
     hashes = {}
 
     # get all the json files and convert them
@@ -58,7 +57,7 @@ def main():
             input_content = i.read()
 
         # hash the input
-        hashes[file] = hashlib.sha256(input_content.encode('utf-8')).hexdigest()
+        hashes[file] = hashlib.sha256(input_content.encode("utf-8")).hexdigest()
 
         # generate the output
         if compiling:
@@ -70,14 +69,14 @@ def main():
         os.makedirs(os.path.dirname(out_file), exist_ok=True)
         with open(out_file, "w") as o:
             o.write(json_str)
-    
+
     # hash the hashes for version number
     version_hash = hashlib.sha256()
     for file, digest in hashes.items():
         summary = file + " " + digest + "\n"
         if "verbose" in args:
             print(summary)
-        version_hash.update(summary.encode('utf-8'))
+        version_hash.update(summary.encode("utf-8"))
     version_hash_digest = version_hash.hexdigest()
 
     # write out version number
