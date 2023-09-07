@@ -27,7 +27,10 @@
           "body": "While this model is leading a unit, modelsin that unit have the Feel No Pain 4+ ability against PsychicAttacks and mortal wounds."
         },
         {
-          "name": "Master of Prescience (Psychic)",
+          "name": "Master of Prescience",
+          "tags": [
+            "Psychic"
+          ],
           "body": "While this model is leadinga unit, each time an attack targets that unit, subtract 1from the Hit roll. In addition, once per battle round, youcan target that unit with one of the following Stratagemsfor 0CP: Counter-offensive; Fire Overwatch; Go to Ground;Heroic Intervention."
         }
       ],

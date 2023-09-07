@@ -27,7 +27,10 @@
           "body": "At the start of the Fight phase, eachenemy unit within Engagement Range of one or more unitswith this ability must take a Battle-shock test."
         },
         {
-          "name": "Terror Troops (Aura)",
+          "name": "Terror Troops",
+          "tags": [
+            "Aura"
+          ],
           "body": "While an enemy unit is within 6\" of thisunit, each time that unit takes a Battle-shock or Leadershiptest, subtract 1 from that test."
         }
       ],

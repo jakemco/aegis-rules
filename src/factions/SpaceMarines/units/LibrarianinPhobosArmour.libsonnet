@@ -28,7 +28,10 @@
           "body": "While this model is leading a unit, modelsin that unit have the Feel No Pain 4+ ability againstPsychic Attacks."
         },
         {
-          "name": "Shrouding (Psychic)",
+          "name": "Shrouding",
+          "tags": [
+            "Psychic"
+          ],
           "body": "While this model is leading a unit,models in that unit have the Stealth ability and that unitcannot be targeted by ranged attacks unless the attackingmodel is within 12\"."
         }
       ],

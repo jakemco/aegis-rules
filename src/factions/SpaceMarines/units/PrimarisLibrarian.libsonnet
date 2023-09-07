@@ -27,7 +27,10 @@
           "body": "While this model is leading a unit, modelsin that unit have the Feel No Pain 4+ ability againstPsychic Attacks."
         },
         {
-          "name": "Mental Fortress (Psychic)",
+          "name": "Mental Fortress",
+          "tags": [
+            "Psychic"
+          ],
           "body": "While this model is leading a unit,models in that unit have a 4+ invulnerable save."
         }
       ],

@@ -26,7 +26,10 @@
       ],
       "other": [
         {
-          "name": "Priority Objective Identified (Aura)",
+          "name": "Priority Objective Identified",
+          "tags": [
+            "Aura"
+          ],
           "body": "At the start of the firstbattle round, if your army contains one or more modelswith this ability, you can select one objective marker on thebattlefield to be the Priority Objective. Until the end of thebattle, while a friendly Adeptus Astartes unit is within 6\" ofthis model, each time a model in that unit makes an attackthat targets an enemy unit that is within range of the PriorityTarget, re-roll a Wound roll of 1."
         },
         {

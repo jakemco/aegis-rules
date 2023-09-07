@@ -28,7 +28,10 @@
           "body": "While this model is leading a unit, modelsin that unit have the Feel No Pain 4+ ability againstPsychic Attacks."
         },
         {
-          "name": "Veil of Time (Psychic)",
+          "name": "Veil of Time",
+          "tags": [
+            "Psychic"
+          ],
           "body": "While this model is leading aunit, weapons equipped by models in that unit have the[SUSTAINED HITS 1] ability."
         }
       ],

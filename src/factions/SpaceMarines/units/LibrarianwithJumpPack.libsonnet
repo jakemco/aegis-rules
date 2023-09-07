@@ -28,7 +28,10 @@
           "body": "While this model is leading a unit, modelsin that unit have the Feel No Pain 4+ ability againstPsychic Attacks."
         },
         {
-          "name": "Might of Heroes (Psychic)",
+          "name": "Might of Heroes",
+          "tags": [
+            "Psychic"
+          ],
           "body": "While this model is leading aunit, improve the Armour Penetration characteristic of meleeweapons equipped by models in that unit by 1."
         }
       ],

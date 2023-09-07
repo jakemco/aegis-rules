@@ -30,7 +30,10 @@
       ],
       "wargear": [
         {
-          "name": "Orbital Comms Array (Aura)",
+          "name": "orbital comms array",
+          "tags": [
+            "Aura"
+          ],
           "body": "While a friendly AdeptusAstartes unit is within 6\" of the bearer, each time you targetthat unit with a Stratagem, roll one D6: on a 5+, you gain 1CP."
         },
         {

@@ -23,7 +23,10 @@
       ],
       "other": [
         {
-          "name": "Wisdom of the Ancients (Aura)",
+          "name": "Wisdom of the Ancients",
+          "tags": [
+            "Aura"
+          ],
           "body": "While a friendly AdeptusAstartes Infantry unit is within 6\" of this model, each time amodel in that unit makes an attack, re-roll a Hit roll of 1."
         }
       ],
