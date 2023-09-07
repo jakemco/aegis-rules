@@ -69,7 +69,7 @@
             }
           }
         },
-        "Multi-melta": {
+        "multi-melta": {
           "profiles": {
             "": {
               "abilities": [
@@ -146,7 +146,7 @@
     "wargear": [
       {
         "num": 2,
-        "type": "multi-meltas"
+        "type": "multi-melta"
       },
       {
         "num": 1,

@@ -41,7 +41,7 @@
     ],
     "weapons": {
       "ranged": {
-        "Flamestorm cannon": {
+        "flamestorm cannon": {
           "profiles": {
             "": {
               "abilities": [
@@ -177,7 +177,7 @@
     "wargear": [
       {
         "num": 2,
-        "type": "flamestorm cannons"
+        "type": "flamestorm cannon"
       },
       {
         "num": 1,

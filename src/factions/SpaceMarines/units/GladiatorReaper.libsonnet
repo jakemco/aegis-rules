@@ -69,7 +69,7 @@
             }
           }
         },
-        "Tempest bolter": {
+        "tempest bolter": {
           "profiles": {
             "": {
               "abilities": [
@@ -147,7 +147,7 @@
     "wargear": [
       {
         "num": 2,
-        "type": "tempest bolters"
+        "type": "tempest bolter"
       },
       {
         "num": 1,

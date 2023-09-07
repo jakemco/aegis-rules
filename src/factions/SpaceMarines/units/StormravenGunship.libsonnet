@@ -42,7 +42,7 @@
     ],
     "weapons": {
       "ranged": {
-        "Hurricane bolter": {
+        "hurricane bolter": {
           "profiles": {
             "": {
               "abilities": [
@@ -58,7 +58,7 @@
             }
           }
         },
-        "Stormstrike missile launcher": {
+        "stormstrike missile launcher": {
           "profiles": {
             "": {
               "abilities": [],
@@ -263,7 +263,7 @@
             "gear": [
               {
                 "num": 2,
-                "type": "hurricane bolters"
+                "type": "hurricane bolter"
               }
             ]
           }
@@ -274,7 +274,7 @@
     "wargear": [
       {
         "num": 2,
-        "type": "stormstrike missile launchers"
+        "type": "stormstrike missile launcher"
       },
       {
         "num": 1,

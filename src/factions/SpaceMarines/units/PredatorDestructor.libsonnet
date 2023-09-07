@@ -39,7 +39,7 @@
     ],
     "weapons": {
       "ranged": {
-        "Heavy bolter": {
+        "heavy bolter": {
           "profiles": {
             "": {
               "abilities": [
@@ -69,7 +69,7 @@
             }
           }
         },
-        "Lascannon": {
+        "lascannon": {
           "profiles": {
             "": {
               "abilities": [],
@@ -136,7 +136,7 @@
             "gear": [
               {
                 "num": 2,
-                "type": "heavy bolters"
+                "type": "heavy bolter"
               }
             ]
           },
@@ -144,7 +144,7 @@
             "gear": [
               {
                 "num": 2,
-                "type": "lascannons"
+                "type": "lascannon"
               }
             ]
           }

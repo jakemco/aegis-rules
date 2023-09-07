@@ -40,7 +40,7 @@
     ],
     "weapons": {
       "ranged": {
-        "Godhammer lascannon": {
+        "godhammer lascannon": {
           "profiles": {
             "": {
               "abilities": [],
@@ -177,7 +177,7 @@
       },
       {
         "num": 2,
-        "type": "godhammer lascannons"
+        "type": "godhammer lascannon"
       },
       {
         "num": 1,

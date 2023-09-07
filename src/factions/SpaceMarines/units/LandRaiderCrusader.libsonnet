@@ -56,7 +56,7 @@
             }
           }
         },
-        "Hurricane bolter": {
+        "hurricane bolter": {
           "profiles": {
             "": {
               "abilities": [
@@ -177,7 +177,7 @@
     "wargear": [
       {
         "num": 2,
-        "type": "hurricane bolters"
+        "type": "hurricane bolter"
       },
       {
         "num": 1,

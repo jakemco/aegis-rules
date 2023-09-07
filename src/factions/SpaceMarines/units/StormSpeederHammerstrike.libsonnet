@@ -53,7 +53,7 @@
             }
           }
         },
-        "Krakstorm grenade launcher": {
+        "krakstorm grenade launcher": {
           "profiles": {
             "": {
               "abilities": [],
@@ -107,7 +107,7 @@
       },
       {
         "num": 2,
-        "type": "krakstorm grenade launchers"
+        "type": "krakstorm grenade launcher"
       },
       {
         "num": 1,

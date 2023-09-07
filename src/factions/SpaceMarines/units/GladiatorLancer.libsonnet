@@ -39,7 +39,7 @@
     ],
     "weapons": {
       "ranged": {
-        "Fragstorm grenade launcher": {
+        "fragstorm grenade launcher": {
           "profiles": {
             "": {
               "abilities": [
@@ -99,7 +99,7 @@
             }
           }
         },
-        "Storm bolter": {
+        "storm bolter": {
           "profiles": {
             "": {
               "abilities": [
@@ -136,7 +136,7 @@
         "lose": [
           {
             "num": 2,
-            "type": "storm bolters"
+            "type": "storm bolter"
           }
         ],
         "gain": [
@@ -144,7 +144,7 @@
             "gear": [
               {
                 "num": 2,
-                "type": "fragstorm grenade launchers"
+                "type": "fragstorm grenade launcher"
               }
             ]
           }
@@ -183,7 +183,7 @@
       },
       {
         "num": 2,
-        "type": "storm bolters"
+        "type": "storm bolter"
       },
       {
         "num": 1,

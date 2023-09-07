@@ -40,7 +40,7 @@
     ],
     "weapons": {
       "ranged": {
-        "Fragstorm grenade launcher": {
+        "fragstorm grenade launcher": {
           "profiles": {
             "": {
               "abilities": [
@@ -108,7 +108,7 @@
     "wargear": [
       {
         "num": 2,
-        "type": "fragstorm grenade launchers"
+        "type": "fragstorm grenade launcher"
       },
       {
         "num": 1,

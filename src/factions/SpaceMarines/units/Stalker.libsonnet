@@ -131,7 +131,7 @@
     "wargear": [
       {
         "num": 2,
-        "type": "Icarus stormcannons"
+        "type": "Icarus stormcannon"
       },
       {
         "num": 1,
