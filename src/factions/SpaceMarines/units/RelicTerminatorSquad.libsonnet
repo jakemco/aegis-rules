@@ -132,7 +132,7 @@
         }
       },
       "melee": {
-        "Chainfist": {
+        "chainfist": {
           "profiles": {
             "": {
               "abilities": [
@@ -292,7 +292,7 @@
             "gear": [
               {
                 "num": 1,
-                "type": "one 1 chainfist"
+                "type": "chainfist" // GW: "one 1 chainfist" >.<
               }
             ]
           }

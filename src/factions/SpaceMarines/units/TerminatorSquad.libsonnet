@@ -194,7 +194,7 @@
               },
               {
                 "num": 1,
-                "type": "storm bolter."
+                "type": "storm bolter"
               }
             ],
             "ruleIdx": 0

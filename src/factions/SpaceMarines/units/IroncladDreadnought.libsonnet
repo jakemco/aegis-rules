@@ -62,7 +62,7 @@
             }
           }
         },
-        "Hunter-killer missile": {
+        "hunter-killer missile": {
           "profiles": {
             "": {
               "abilities": [
@@ -250,8 +250,8 @@
           {
             "gear": [
               {
-                "num": 1,
-                "type": "up to 2 hunter-killer missiles"
+                "num": 2, // "up to 2", but who would take just one when they're free?
+                "type": "hunter-killer missile"
               }
             ]
           }

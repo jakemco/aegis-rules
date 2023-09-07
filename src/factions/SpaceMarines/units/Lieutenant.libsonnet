@@ -222,6 +222,7 @@
             }
           }
         },
+        /* GW didn't give you a way to equip this >.<
         "Thunder hammer": {
           "profiles": {
             "": {
@@ -237,6 +238,7 @@
             }
           }
         },
+        */
         "twin lightning claws": {
           "profiles": {
             "": {

@@ -284,7 +284,7 @@
                 "type": "hand flamer"
               }
             ],
-            "ruleIdx": 0
+            // "ruleIdx": 0 // GW listed it on the front of the card, so there's no need to reference the armory card?
           },
           {
             "gear": [

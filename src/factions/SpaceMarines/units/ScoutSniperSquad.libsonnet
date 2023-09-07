@@ -83,7 +83,7 @@
             }
           }
         },
-        "Scout sniper rifle": {
+        "scout sniper rifle": {
           "profiles": {
             "": {
               "abilities": [
@@ -146,7 +146,7 @@
       },
       {
         "num": 1,
-        "type": "sniper rifle"
+        "type": "scout sniper rifle" // GW left "scout" off here
       },
       {
         "num": 1,
