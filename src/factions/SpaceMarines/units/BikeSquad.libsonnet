@@ -2,7 +2,7 @@
   "Bike Squad": {
     "models": [
       {
-        "name": "Space Marine Bike",
+        "name": "Space Marine Biker", // GW made this name mismatch on the card
         "stats": {
           "movement": 12,
           "toughness": 5,

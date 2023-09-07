@@ -64,6 +64,7 @@
             }
           }
         },
+        /* Oh GW, you didn't give him a way to take this weapon
         "Grav-pistol": {
           "profiles": {
             "": {
@@ -80,6 +81,7 @@
             }
           }
         },
+        */
         "hand flamer": {
           "profiles": {
             "": {
