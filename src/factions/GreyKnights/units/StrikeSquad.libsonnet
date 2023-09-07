@@ -56,9 +56,9 @@ t.Unit {
       type: 'Grey Knight',
       lose: [t.Wargear('storm bolter'), t.Wargear('Nemesis force weapon')],
       gain: [
-        [t.Wargear('incinerator'), t.Wargear('close combat weapon')],
-        [t.Wargear('psilencer'), t.Wargear('close combat weapon')],
-        [t.Wargear('psycannon'), t.Wargear('close combat weapon')],
+        t.Choice([t.Wargear('incinerator'), t.Wargear('close combat weapon')]),
+        t.Choice([t.Wargear('psilencer'), t.Wargear('close combat weapon')]),
+        t.Choice([t.Wargear('psycannon'), t.Wargear('close combat weapon')]),
       ],
     },
   ],

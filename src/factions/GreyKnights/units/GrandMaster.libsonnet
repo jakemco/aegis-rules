@@ -58,9 +58,9 @@ t.Unit {
       type: 'Grand Master',
       lose: [t.Wargear('storm bolter')],
       gain: [
-        [t.Wargear('incinerator')],
-        [t.Wargear('psilencer')],
-        [t.Wargear('psycannon')],
+        t.Choice([t.Wargear('incinerator')]),
+        t.Choice([t.Wargear('psilencer')]),
+        t.Choice([t.Wargear('psycannon')]),
       ],
     },
   ],

@@ -52,8 +52,8 @@ t.Unit {
       type: 'Grand Master in Nemesis Dreadknight',
       lose: [t.Wargear('dreadfists')],
       gain: [
-        [t.Wargear('Nemesis daemon greathammer')],
-        [t.Wargear('Nemesis greatsword')],
+        t.Choice([t.Wargear('Nemesis daemon greathammer')]),
+        t.Choice([t.Wargear('Nemesis greatsword')]),
       ],
     },
 
@@ -62,9 +62,9 @@ t.Unit {
       type: 'Grand Master in Nemesis Dreadknight',
       // TODO: I could multiply them all out here but that would be lame
       gain: [
-        [t.Wargear('gatling psilencer')],
-        [t.Wargear('heavy incinerator')],
-        [t.Wargear('heavy psycannon')],
+        t.Choice([t.Wargear('gatling psilencer')]),
+        t.Choice([t.Wargear('heavy incinerator')]),
+        t.Choice([t.Wargear('heavy psycannon')]),
       ],
     },
   ],

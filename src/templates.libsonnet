@@ -84,6 +84,10 @@
     extraWargear: [],
   },
 
+  Choice(wargear):: {
+    gear: wargear,
+  },
+
   Wargear(type, num=1):: {
     num: num,
     type: type,

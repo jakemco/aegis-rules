@@ -66,9 +66,9 @@ t.Unit {
       type: 'Brotherhood Terminator',
       lose: [t.Wargear('storm bolter')],
       gain: [
-        [t.Wargear('incinerator')],
-        [t.Wargear('psilencer')],
-        [t.Wargear('psycannon')],
+        t.Choice([t.Wargear('incinerator')]),
+        t.Choice([t.Wargear('psilencer')]),
+        t.Choice([t.Wargear('psycannon')]),
       ],
     },
     {
@@ -76,7 +76,7 @@ t.Unit {
       type: 'Brotherhood Terminator',
       prereq: [t.Wargear('storm bolter')],
       gain: [
-        [t.Wargear("Ancient's banner")],
+        t.Choice([t.Wargear("Ancient's banner")]),
       ],
       mutex: 1,
     },
@@ -85,7 +85,7 @@ t.Unit {
       type: 'Brotherhood Terminator',
       lose: [t.Wargear('storm bolter')],
       gain: [
-        [t.Wargear('narthecium')],
+        t.Choice([t.Wargear('narthecium')]),
       ],
       mutex: 1,
     },
