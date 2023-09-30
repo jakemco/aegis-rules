@@ -1,1 +1,1 @@
-['GreyKnights', 'SpaceMarines', 'Custodes']
+['GreyKnights', 'SpaceMarines', 'Custodes', 'Necrons', 'Tyranids']
