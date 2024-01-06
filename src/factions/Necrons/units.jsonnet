@@ -51,3 +51,11 @@
 /* Monolith failed to parse */
 /* The Silent King failed to parse */
 + (import './units/ConvergenceOfDominion.libsonnet')
+
+
+/* IA Units */
++ (import './units/CanoptekTombStalker.libsonnet')
++ (import './units/CanoptekTombSentinel.libsonnet')
++ (import './units/CanoptekAcanthrites.libsonnet')
+/* failed to parse Tesseract Ark */
++ (import './units/SeraptekHeavyConstruct.libsonnet')
