@@ -28,22 +28,10 @@
         },
         {
           "name": "Technomancer",
-          "body": "At the end of your Movement phase, you can select one friendly Necrons model within 3\" of the bearer. That model regains up to D3 lost wounds. Each model can only be selected for this ability once per turn."
+          "body": "At the end of your Movement phase, you can select one friendly Necrons model within 6\" of the bearer. That model regains up to D3 lost wounds. Each model can only be selected for this ability once per turn."
         }
       ],
-      "wargear": [
-        {
-          "name": "Canoptek cloak",
-          "body": "The bearer has the Fly keyword, the Lone Operative ability and a Move characteristic of 10\"."
-        },
-        {
-          "name": "Canoptek control node",
-          "tags": [
-            "Aura"
-          ],
-          "body": "While a friendly Canoptek unit is within 6\" of the bearer, each time a Canoptek model in that unit makes an attack, add 1 to the Hit roll."
-        }
-      ],
+      "wargear": [],
       "invulnSave": null,
       "damagedThreshold": null
     },
@@ -85,36 +73,13 @@
         }
       }
     },
-    "options": [
-      {
-        "lose": [
-          {
-            "num": 1,
-            "type": "Canoptek cloak"
-          }
-        ],
-        "gain": [
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "Canoptek control node"
-              }
-            ]
-          }
-        ]
-      }
-    ],
+    "options": [],
     "optionRules": [],
     "wargear": [
       {
         "num": 1,
         "type": "staff of light"
       },
-      {
-        "num": 1,
-        "type": "Canoptek cloak"
-      }
     ],
     "composition": [
       {

@@ -4,7 +4,7 @@
       {
         "name": null,
         "stats": {
-          "movement": 9,
+          "movement": 10,
           "toughness": 6,
           "armorSave": 3,
           "wounds": 3,
@@ -46,7 +46,7 @@
               ],
               "range": 12,
               "attacks": 3,
-              "hitSkill": 2,
+              "hitSkill": 4,
               "strength": 5,
               "ap": 0,
               "damage": 1
@@ -88,7 +88,7 @@
               "range": null,
               "attacks": 8,
               "hitSkill": 4,
-              "strength": 4,
+              "strength": 5,
               "ap": 0,
               "damage": 1
             }

@@ -4,7 +4,7 @@
       {
         "name": null,
         "stats": {
-          "movement": 7,
+          "movement": 8,
           "toughness": 8,
           "armorSave": 3,
           "wounds": 12,

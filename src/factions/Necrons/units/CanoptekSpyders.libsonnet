@@ -40,7 +40,7 @@
           "tags": [
             "Aura"
           ],
-          "body": "While a friendly Necrons unit is within 6\" of the bearer, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks."
+          "body": "While a friendly Necrons unit is within 6\" of the bearer, models in that unit have the Feel No Pain 5+ ability against Psychic Attacks."
         }
       ],
       "invulnSave": null,

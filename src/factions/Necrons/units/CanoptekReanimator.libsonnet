@@ -4,11 +4,11 @@
       {
         "name": null,
         "stats": {
-          "movement": 7,
+          "movement": 8,
           "toughness": 6,
           "armorSave": 3,
           "wounds": 6,
-          "leadership": 7,
+          "leadership": 8,
           "objectiveControl": 3
         },
         "extraKeywords": []
@@ -27,7 +27,7 @@
           "tags": [
             "Aura"
           ],
-          "body": "While a friendly Necrons unit is within 12\" of this model, each time that unit's Reanimation Protocols activate, that unit reanimates an additional D3 wounds."
+          "body": "While a friendly Necrons unit is within 3\" of this model, each time that unit's Reanimation Protocols activate, that unit reanimates an additional D3 wounds."
         }
       ],
       "wargear": [],

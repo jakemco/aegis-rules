@@ -24,7 +24,7 @@
       "other": [
         {
           "name": "Evasion Engrams",
-          "body": "Each time an attack targets this unit, subtract 1 from the Hit roll."
+          "body": "In your Shooting phase, after this unit has shot, it can make a Normal move of up to 6\". If it does, until the end of the turn, this unit is not eligible to declare a charge."
         }
       ],
       "wargear": [
@@ -34,11 +34,11 @@
         },
         {
           "name": "shadowloom",
-          "body": "The bearer has a 5+ invulnerable save."
+          "body": "The bearer has the Stealth ability."
         },
         {
           "name": "shieldvanes",
-          "body": "The bearer has a 3+ Save characteristic."
+          "body": "The bearer has a 3+ Save characteristic and a Move characteristic of 8\"."
         }
       ],
       "invulnSave": null,
@@ -60,8 +60,8 @@
               ],
               "range": 18,
               "attacks": "D6",
-              "hitSkill": 2,
-              "strength": 6,
+              "hitSkill": 3,
+              "strength": 5,
               "ap": 0,
               "damage": 1
             }
