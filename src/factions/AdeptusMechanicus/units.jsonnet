@@ -30,3 +30,8 @@
 + (import './units/TechPriestEnginseer.libsonnet')
 + (import './units/TechPriestManipulus.libsonnet')
 + (import './units/Technoarcheologist.libsonnet')
+
+/* HH LEGENDS */
++ (import './units/SecutariiHoplites.libsonnet')
++ (import './units/SecutariiPeltasts.libsonnet')
++ (import './units/TerraxpatternTermite.libsonnet')
