@@ -38,7 +38,8 @@
       "Infantry",
       "Character",
       "Tech-Priest",
-      "Manipulus"
+      "Manipulus",
+      "Cult Mechanicus"
     ],
     "weapons": {
       "ranged": {

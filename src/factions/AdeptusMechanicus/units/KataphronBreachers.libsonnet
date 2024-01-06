@@ -32,8 +32,8 @@
     "keywords": [
       "Infantry",
       "Imperium",
-      "Kataphron",
-      "Breachers"
+      "Kataphron Breachers",
+      "Cult Mechanicus",
     ],
     "weapons": {
       "ranged": {
@@ -44,7 +44,7 @@
                 "ANTI-VEHICLE 4+",
                 "RAPID FIRE 2"
               ],
-              "range": 36,
+              "range": 30,
               "attacks": 2,
               "hitSkill": 4,
               "strength": 8,
@@ -60,7 +60,7 @@
                 "ANTI-INFANTRY 2+",
                 "BLAST"
               ],
-              "range": 48,
+              "range": 36,
               "attacks": "D3",
               "hitSkill": 4,
               "strength": 6,

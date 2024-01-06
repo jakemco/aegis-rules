@@ -23,19 +23,15 @@
       ],
       "other": [
         {
-          "name": "Dunecrawler",
-          "body": "This model can be moved over terrain features that are 4\" or less in height as if they were not there."
+          "name": "Emanatus Force Field",
+          "body": "While a friendly Adeptus Mechanicus Battleline model is wholly within 6\" of this model, that Battleline model has a 4+ invulnerable save against ranged attacks."
         }
       ],
       "wargear": [
         {
           "name": "broad spectrum data-tether",
-          "body": "Each time you select the bearer as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
+          "body": "The bearer loses the Smoke keyword, but each time you select the bearer as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
         },
-        {
-          "name": "smoke launchers",
-          "body": "The bearer has the Smoke keyword."
-        }
       ],
       "invulnSave": 4,
       "damagedThreshold": 4
@@ -45,7 +41,8 @@
       "Walker",
       "Imperium",
       "Skitarii",
-      "Onager Dunecrawler"
+      "Onager Dunecrawler",
+      "Smoke",
     ],
     "weapons": {
       "ranged": {
@@ -222,7 +219,7 @@
             "gear": [
               {
                 "num": 1,
-                "type": "additional cognis heavy stubber"
+                "type": "cognis heavy stubber"
               }
             ]
           }
@@ -238,14 +235,6 @@
               }
             ]
           },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "smoke launchers"
-              }
-            ]
-          }
         ]
       }
     ],

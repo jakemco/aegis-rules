@@ -24,7 +24,7 @@
       "other": [
         {
           "name": "Searing Conflagration",
-          "body": "In your Shooting phase, after this unit has shot, select one enemy unit (excluding Monsters and Vehicles) that was hit by one or more of this unit's phosphor torches this phase and roll one D6, adding 3 to the result if this unit is within 6\" of one or more friendly Adeptus Mechanicus Battleline units. On a 4+, until the end of your opponent's next turn, that enemy unit is aflame. While a unit is aflame, subtract 2\" from its Move characteristic and subtract 2 from Advance and Charge rolls made for it."
+          "body": "Each time a model in this unit makes an attack with a phosphor torch that targets an enemy unit within range of an objective marker, re-roll a Wound roll of 1. If this unit is also within 6\" of one or more friendly Adeptus Mechanicus Battleline units, each time such an attack targets such a unit, you can re-roll the Wound roll instead."
         }
       ],
       "wargear": [],
@@ -38,7 +38,8 @@
       "Jump Pack",
       "Imperium",
       "Skitarii",
-      "Pteraxii Sterylizors"
+      "Pteraxii",
+      "Sterylizors"
     ],
     "weapons": {
       "ranged": {

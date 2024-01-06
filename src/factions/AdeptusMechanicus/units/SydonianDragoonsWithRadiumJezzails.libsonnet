@@ -1,5 +1,5 @@
 {
-  "Sydonian Dragoons": {
+  "Sydonian Dragoons with Radium Jezzails": {
     "models": [
       {
         "name": null,
@@ -24,8 +24,8 @@
       ],
       "other": [
         {
-          "name": "Elevated Strider",
-          "body": "This unit is eligible to shoot and declare a charge in a turn in which it Fell Back, and you can re-roll Desperate Escape tests taken for models in this unit."
+          "name": "Focused Hunters",
+          "body": "At the start of the battle, select one unit from your opponent's army. Until the end of the battle, each time a model in this unit makes an attack that targets that unit, you can re-roll the Hit roll."
         },
         {
           "name": "Broad Spectrum Data-tether",
@@ -38,10 +38,11 @@
     },
     "keywords": [
       "Imperium",
-      "V ehicle",
+      "Vehicle",
       "Walker",
       "Skitarii",
-      "Sydonian Dragoons"
+      "Sydonian",
+      "Dragoons with RadiumJezzails"
     ],
     "weapons": {
       "ranged": {
@@ -92,67 +93,23 @@
             }
           }
         },
-        "taser lance": {
-          "profiles": {
-            "": {
-              "abilities": [
-                "ANTI-WALKER 2+",
-                "LANCE",
-                "SUSTAINED HITS 2"
-              ],
-              "range": null,
-              "attacks": 4,
-              "hitSkill": 4,
-              "strength": 7,
-              "ap": -2,
-              "damage": 2
-            }
-          }
-        }
       }
     },
-    "options": [
-      {
-        "lose": [
-          {
-            "num": 1,
-            "type": "taser lance"
-          }
-        ],
-        "gain": [
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "radium jezzail"
-              },
-              {
-                "num": 1,
-                "type": "Ironstrider feet"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "gain": [
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "phosphor serpenta"
-              }
-            ]
-          }
-        ]
-      }
-    ],
+    "options": [],
     "optionRules": [],
     "wargear": [
       {
         "num": 1,
-        "type": "taser lance"
-      }
+        "type": "phosphor serpenta"
+      },
+      {
+        "num": 1,
+        "type": "radium jezzail"
+      },
+      {
+        "num": 1,
+        "type": "Ironstrider feet"
+      },
     ],
     "composition": [
       {

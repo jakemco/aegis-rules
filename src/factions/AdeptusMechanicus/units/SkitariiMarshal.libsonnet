@@ -31,12 +31,7 @@
           "body": "Once per turn, you can select this model's unit for a Stratagem even if that Stratagem has already been used on another unit from your army this phase."
         }
       ],
-      "wargear": [
-        {
-          "name": "control stave",
-          "body": "The bearer's unit can still be selected as the target of a Stratagem while Battle-shocked."
-        }
-      ],
+      "wargear": [],
       "invulnSave": 5,
       "damagedThreshold": null
     },
@@ -49,7 +44,7 @@
     ],
     "weapons": {
       "ranged": {
-        "archeotech pistol": {
+        "mechanicus pistol": {
           "profiles": {
             "": {
               "abilities": [
@@ -87,7 +82,7 @@
     "wargear": [
       {
         "num": 1,
-        "type": "archeotech pistol"
+        "type": "mechanicus pistol"
       },
       {
         "num": 1,

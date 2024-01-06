@@ -29,6 +29,10 @@
             "Aura"
           ],
           "body": "While an enemy unit is within 6\" of this unit, each time a Battle-shock or Leadership test is taken for that unit, subtract 1 from that test. While this unit is within 6\" of one or more friendly Adeptus Mechanicus Battleline units, subtract 2 from that test instead."
+        },
+        {
+          "name": "Voices in the Code",
+          "body": "At the start of the Fight phase, each enemy unit within Engagement Range of one or more units with this ability must take a Battle-shock test."
         }
       ],
       "wargear": [],

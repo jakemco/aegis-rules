@@ -27,8 +27,8 @@
           "body": "Each time you select this model as the target of a Stratagem, roll one D6: on a 5+, you gain 1CP."
         },
         {
-          "name": "Dunerider",
-          "body": "Units can disembark from this Transport after it has Advanced. Units that do so count as having made a Normal move that phase, and cannot declare a charge in the same turn, but can otherwise act normally in the remainder of the turn."
+          "name": "Fire Support",
+          "body": "In your Shooting phase, after this model has shot, select one enemy unit it scored one or more hits against this phase. Until the end of the phase, each time a friendly model that disembarked from this Transport this turn makes an attack that targets that enemy unit, you can re-roll the Wound roll."
         }
       ],
       "wargear": [],
@@ -50,7 +50,8 @@
             "": {
               "abilities": [
                 "RAPID FIRE 9",
-                "SUSTAINED HITS 1"
+                "SUSTAINED HITS 1",
+                "TWIN-LINKED"
               ],
               "range": 36,
               "attacks": 9,

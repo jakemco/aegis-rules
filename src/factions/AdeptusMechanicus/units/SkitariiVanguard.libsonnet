@@ -6,7 +6,7 @@
         "stats": {
           "movement": 6,
           "toughness": 3,
-          "armorSave": 5,
+          "armorSave": 4,
           "wounds": 1,
           "leadership": 7,
           "objectiveControl": 2
@@ -38,7 +38,7 @@
           "body": "Ranged weapons equipped by models in the bearer's unit have the [IGNORES COVER] ability."
         }
       ],
-      "invulnSave": 6,
+      "invulnSave": 5,
       "damagedThreshold": null
     },
     "keywords": [

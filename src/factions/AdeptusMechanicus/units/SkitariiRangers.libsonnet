@@ -37,7 +37,7 @@
           "body": "Ranged weapons equipped by models in the bearer's unit have the [IGNORES COVER] ability."
         }
       ],
-      "invulnSave": 6,
+      "invulnSave": 5,
       "damagedThreshold": null
     },
     "keywords": [
@@ -49,7 +49,7 @@
     ],
     "weapons": {
       "ranged": {
-        "archeotech pistol": {
+        "mechanicus pistol": {
           "profiles": {
             "": {
               "abilities": [
@@ -194,7 +194,7 @@
             "gear": [
               {
                 "num": 1,
-                "type": "archeotech pistol"
+                "type": "mechanicus pistol"
               }
             ]
           }

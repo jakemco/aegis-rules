@@ -39,7 +39,8 @@
       "Grenades",
       "Imperium",
       "Skitarii",
-      "Pteraxii Skystalkers"
+      "Pteraxii",
+      "Skystalkers",
     ],
     "weapons": {
       "ranged": {
