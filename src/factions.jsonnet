@@ -1,1 +1,10 @@
-['GreyKnights', 'SpaceMarines', 'Custodes', 'Necrons', 'Tyranids', 'DeathGuard', 'AdeptaSororitas']
+[
+  'GreyKnights',
+  'SpaceMarines',
+  'Custodes',
+  'Necrons',
+  'Tyranids',
+  'DeathGuard',
+  'AdeptaSororitas',
+  'AdeptusMechanicus',
+]
