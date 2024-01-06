@@ -13,13 +13,13 @@
 + (import './units/KataphronBreachers.libsonnet')
 + (import './units/KataphronDestroyers.libsonnet')
 + (import './units/OnagerDunecrawler.libsonnet')
-/* Failed to parse Pteraxii Skystalkers */
-/* Failed to parse Pteraxii Sterylizors */
-/* Failed to parse Serberys Raiders */
-/* Failed to parse Serberys Sulphurhounds */
++ (import './units/PteraxiiSkystalkers.libsonnet')
++ (import './units/PteraxiiSterylizors.libsonnet')
++ (import './units/SerberysRaiders.libsonnet')
++ (import './units/SerberysSulphurhounds.libsonnet')
 + (import './units/Servitors.libsonnet')
 + (import './units/SicarianInfiltrators.libsonnet')
-/* Failed to parse Sicarian Ruststalkers */
++ (import './units/SicarianRuststalkers.libsonnet')
 + (import './units/SkitariiMarshal.libsonnet')
 + (import './units/SkitariiRangers.libsonnet')
 + (import './units/SkitariiVanguard.libsonnet')
