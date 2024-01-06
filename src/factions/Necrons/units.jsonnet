@@ -46,7 +46,7 @@
 + (import './units/GhostArk.libsonnet')
 + (import './units/DoomScythe.libsonnet')
 + (import './units/NightScythe.libsonnet')
-/* Obelisk failed to parse */
++ (import './units/Obelisk.libsonnet')
 /* Tesseract Valut failed to parse */
 /* Monolith failed to parse */
 /* The Silent King failed to parse */

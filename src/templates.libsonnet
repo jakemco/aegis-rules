@@ -52,6 +52,7 @@
     wargear: [],
     invulnSave: null,
     damagedThreshold: null,
+    damagedEffect: null,
   },
 
   Weapons:: {
