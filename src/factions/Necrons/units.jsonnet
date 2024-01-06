@@ -13,7 +13,7 @@
 + (import './units/LokhustLord.libsonnet')
 + (import './units/Lord.libsonnet')
 + (import './units/CatacombCommandBarge.libsonnet')
-/* Overlord failed to parse */
++ (import './units/Overlord.libsonnet')
 + (import './units/Technomancer.libsonnet')
 + (import './units/Psychomancer.libsonnet')
 + (import './units/Chronomancer.libsonnet')
@@ -26,7 +26,7 @@
 + (import './units/Deathmarks.libsonnet')
 + (import './units/FlayedOnes.libsonnet')
 + (import './units/Cryptothralls.libsonnet')
-/* Skorpekh Destroyers failed to parse */
++ (import './units/SkorpekhDestroyers.libsonnet')
 + (import './units/TriarchStalker.libsonnet')
 + (import './units/CtanShardoftheDeceiver.libsonnet')
 + (import './units/CtanShardoftheNightbringer.libsonnet')
@@ -34,7 +34,7 @@
 + (import './units/TranscendentCtan.libsonnet')
 + (import './units/CanoptekSpyders.libsonnet')
 + (import './units/CanoptekScarabSwarms.libsonnet')
-/* Ophydian Destroyers failed to parse */
++ (import './units/OphydianDestroyers.libsonnet')
 + (import './units/TombBlades.libsonnet')
 + (import './units/TriarchPraetorians.libsonnet')
 + (import './units/CanoptekWraiths.libsonnet')
