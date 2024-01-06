@@ -7,4 +7,5 @@
   'DeathGuard',
   'AdeptaSororitas',
   'AdeptusMechanicus',
+  'ImperialKnights',
 ]
