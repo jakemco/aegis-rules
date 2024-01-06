@@ -32,6 +32,6 @@
 + (import './units/Technoarcheologist.libsonnet')
 
 /* HH LEGENDS */
-+ (import './units/SecutariiHoplites.libsonnet')
-+ (import './units/SecutariiPeltasts.libsonnet')
-+ (import './units/TerraxpatternTermite.libsonnet')
++ (import './units/legends/SecutariiHoplites.libsonnet')
++ (import './units/legends/SecutariiPeltasts.libsonnet')
++ (import './units/legends/TerraxpatternTermite.libsonnet')
