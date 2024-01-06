@@ -12,3 +12,14 @@
 + (import './units/KnightCastellan.libsonnet')
 + (import './units/KnightValiant.libsonnet')
 /* Failed to parse Canis Rex / Sir Hekhtur */
+
+/* IA units */
++ (import './units/AcastusKnightAsterius.libsonnet')
++ (import './units/AcastusKnightPorphyrion.libsonnet')
++ (import './units/CerastusKnightLancer.libsonnet')
++ (import './units/CerastusKnightCastigator.libsonnet')
++ (import './units/CerastusKnightAcheron.libsonnet')
++ (import './units/CerastusKnightAtrapos.libsonnet')
++ (import './units/QuestorisKnightMagaera.libsonnet')
++ (import './units/QuestorisKnightStyrix.libsonnet')
++ (import './units/ArmigerMoirax.libsonnet')
