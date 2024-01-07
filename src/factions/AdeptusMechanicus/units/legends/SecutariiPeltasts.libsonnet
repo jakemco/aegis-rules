@@ -35,7 +35,7 @@
           "body": "Ranged weapons equipped by models in the bearer's unit have the [IGNORES COVER] ability."
         }
       ],
-      "invulnSave": null,
+      "invulnSave": 6,
       "damagedThreshold": null,
       "damagedEffect": null
     },
