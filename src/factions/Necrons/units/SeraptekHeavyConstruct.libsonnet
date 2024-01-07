@@ -32,7 +32,7 @@
         }
       ],
       "wargear": [],
-      "invulnSave": null,
+      "invulnSave": 5,
       "damagedThreshold": 9,
       "damagedEffect": "While this model has 1-9 wounds remaining, subtract 5 from this model's Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll."
     },
