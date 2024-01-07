@@ -7,7 +7,7 @@
           "movement": 10,
           "toughness": 6,
           "armorSave": 3,
-          "wounds": 3,
+          "wounds": 4,
           "leadership": 8,
           "objectiveControl": 2
         },
