@@ -45,6 +45,7 @@
       "Character",
       "Grenades",
       "Imperium",
+      "Tacticus",
       "Lieutenant"
     ],
     "weapons": {
@@ -64,56 +65,22 @@
             }
           }
         },
-        "grav-pistol": {
+        "heavy bolt pistol": {
           "profiles": {
             "": {
               "abilities": [
-                "ANTI-VEHICLE 2+",
                 "PISTOL"
               ],
-              "range": 12,
+              "range": 18,
               "attacks": 1,
               "hitSkill": 2,
               "strength": 4,
               "ap": -1,
-              "damage": 2
-            }
-          }
-        },
-        "hand flamer": {
-          "profiles": {
-            "": {
-              "abilities": [
-                "IGNORES COVER",
-                "PISTOL",
-                "TORRENT"
-              ],
-              "range": 12,
-              "attacks": "D6",
-              "hitSkill": null,
-              "strength": 3,
-              "ap": 0,
               "damage": 1
             }
           }
         },
-        "inferno pistol": {
-          "profiles": {
-            "": {
-              "abilities": [
-                "MELTA 2",
-                "PISTOL"
-              ],
-              "range": 6,
-              "attacks": 1,
-              "hitSkill": 2,
-              "strength": 8,
-              "ap": -4,
-              "damage": "D3"
-            }
-          }
-        },
-        "master-crafted boltgun": {
+        "master-crafted bolter": {
           "profiles": {
             "": {
               "abilities": [],
@@ -121,6 +88,22 @@
               "attacks": 2,
               "hitSkill": 2,
               "strength": 4,
+              "ap": -1,
+              "damage": 2
+            }
+          }
+        },
+        "neo-volkite pistol": {
+          "profiles": {
+            "": {
+              "abilities": [
+                "DEVASTATING WOUNDS",
+                "PISTOL"
+              ],
+              "range": 12,
+              "attacks": 1,
+              "hitSkill": 2,
+              "strength": 5,
               "ap": 0,
               "damage": 2
             }
@@ -152,37 +135,9 @@
               "damage": 2
             }
           }
-        },
-        "storm bolter": {
-          "profiles": {
-            "": {
-              "abilities": [
-                "RAPID FIRE 2"
-              ],
-              "range": 24,
-              "attacks": 2,
-              "hitSkill": 2,
-              "strength": 4,
-              "ap": 0,
-              "damage": 1
-            }
-          }
         }
       },
       "melee": {
-        "Astartes chainsword": {
-          "profiles": {
-            "": {
-              "abilities": [],
-              "range": null,
-              "attacks": 6,
-              "hitSkill": 2,
-              "strength": 4,
-              "ap": -1,
-              "damage": 1
-            }
-          }
-        },
         "close combat weapon": {
           "profiles": {
             "": {
@@ -193,6 +148,19 @@
               "strength": 4,
               "ap": 0,
               "damage": 1
+            }
+          }
+        },
+        "master-crafted power weapon": {
+          "profiles": {
+            "": {
+              "abilities": [],
+              "range": null,
+              "attacks": 5,
+              "hitSkill": 2,
+              "strength": 5,
+              "ap": -2,
+              "damage": 2
             }
           }
         },
@@ -208,51 +176,6 @@
               "damage": 2
             }
           }
-        },
-        "power weapon": {
-          "profiles": {
-            "": {
-              "abilities": [],
-              "range": null,
-              "attacks": 5,
-              "hitSkill": 2,
-              "strength": 5,
-              "ap": -2,
-              "damage": 1
-            }
-          }
-        },
-        /* GW didn't give you a way to equip this >.<
-        "Thunder hammer": {
-          "profiles": {
-            "": {
-              "abilities": [
-                "DEVASTATING WOUNDS"
-              ],
-              "range": null,
-              "attacks": 4,
-              "hitSkill": 3,
-              "strength": 8,
-              "ap": -2,
-              "damage": 2
-            }
-          }
-        },
-        */
-        "twin lightning claws": {
-          "profiles": {
-            "": {
-              "abilities": [
-                "TWIN-LINKED"
-              ],
-              "range": null,
-              "attacks": 6,
-              "hitSkill": 2,
-              "strength": 5,
-              "ap": -2,
-              "damage": 1
-            }
-          }
         }
       }
     },
@@ -261,43 +184,10 @@
         "lose": [
           {
             "num": 1,
-            "type": "master-crafted boltgun"
+            "type": "master-crafted bolter"
           }
         ],
         "gain": [
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "combi-weapon"
-              }
-            ],
-            "ruleIdx": 1
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "hand flamer"
-              }
-            ]
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "grav-pistol"
-              }
-            ]
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "inferno pistol"
-              }
-            ]
-          },
           {
             "gear": [
               {
@@ -310,7 +200,7 @@
             "gear": [
               {
                 "num": 1,
-                "type": "storm bolter"
+                "type": "master-crafted power weapon"
               }
             ]
           },
@@ -321,23 +211,6 @@
                 "type": "power fist"
               }
             ]
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "power weapon"
-              }
-            ]
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "storm shield"
-              }
-            ],
-            "ruleIdx": 0
           }
         ]
       },
@@ -345,7 +218,15 @@
         "lose": [
           {
             "num": 1,
-            "type": "Astartes chainsword"
+            "type": "bolt pistol"
+          },
+          {
+            "num": 1,
+            "type": "master-crafted bolter"
+          },
+          {
+            "num": 1,
+            "type": "close combat weapon"
           }
         ],
         "gain": [
@@ -353,20 +234,33 @@
             "gear": [
               {
                 "num": 1,
-                "type": "close combat weapon"
+                "type": "neo-volkite pistol"
+              },
+              {
+                "num": 1,
+                "type": "master-crafted power weapon"
               },
               {
                 "num": 1,
                 "type": "storm shield"
               }
-            ],
-            "ruleIdx": 0
-          },
+            ]
+          }
+        ]
+      },
+      {
+        "lose": [
+          {
+            "num": 1,
+            "type": "bolt pistol"
+          }
+        ],
+        "gain": [
           {
             "gear": [
               {
                 "num": 1,
-                "type": "power fist"
+                "type": "heavy bolt pistol"
               }
             ]
           }
@@ -376,11 +270,7 @@
         "lose": [
           {
             "num": 1,
-            "type": "master-crafted boltgun"
-          },
-          {
-            "num": 1,
-            "type": "Astartes chainsword"
+            "type": "close combat weapon"
           }
         ],
         "gain": [
@@ -388,17 +278,22 @@
             "gear": [
               {
                 "num": 1,
-                "type": "twin lightning claws"
+                "type": "master-crafted power weapon"
+              }
+            ]
+          },
+          {
+            "gear": [
+              {
+                "num": 1,
+                "type": "power fist"
               }
             ]
           }
         ]
       }
     ],
-    "optionRules": [
-      "Maximum one per model.",
-      "The profile for this weapon can be found on the Adeptus Astartes Armoury card."
-    ],
+    "optionRules": [],
     "wargear": [
       {
         "num": 1,
@@ -406,11 +301,11 @@
       },
       {
         "num": 1,
-        "type": "master-crafted boltgun"
+        "type": "master-crafted bolter"
       },
       {
         "num": 1,
-        "type": "Astartes chainsword"
+        "type": "close combat weapon"
       }
     ],
     "composition": [
@@ -422,10 +317,14 @@
       }
     ],
     "leader": [
-      "Assault Squad",
-      "Command Squad",
-      "Tactical Squad",
-      "Vanguard Veteran Squad"
+      "Assault Intercessor Squad",
+      "Bladeguard Veteran Squad",
+      "Company Heroes",
+      "Hellblaster Squad",
+      "Infernus Squad",
+      "Intercessor Squad",
+      "Sternguard Veteran Squad",
+      "Tactical Squad"
     ],
     "leaderRules": [
       "You can attach this model to one of the above units even if one Captain or Chapter Master model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths."

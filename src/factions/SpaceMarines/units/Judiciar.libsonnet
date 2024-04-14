@@ -24,15 +24,15 @@
       "other": [
         {
           "name": "Tempormortis",
-          "body": "While this model is leading a unit, that unit hasthe Fights First ability."
+          "body": "While this model is leading a unit, that unit has the Fights First ability."
         },
         {
           "name": "Silent Fury",
-          "body": "Each time this model destroys an enemyCharacter model, until the end of the battle, add 1 to theAttacks characteristic of its executioner relic blade."
+          "body": "Each time this model destroys an enemy Character model, until the end of the battle, add 1 to the Attacks characteristic of its executioner relic blade."
         },
         {
           "name": "Invulnerable Save",
-          "body": "* This model has a 4+ invulnerable save againstmelee attacks."
+          "body": "This model has a 4+ invulnerable save against melee attacks."
         }
       ],
       "wargear": [],
@@ -108,7 +108,8 @@
       "Bladeguard Veteran Squad",
       "Infernus Squad",
       "Intercessor Squad",
-      "Sternguard Veteran Squad"
+      "Sternguard Veteran Squad",
+      "Tactical Squad",
     ]
   }
 }

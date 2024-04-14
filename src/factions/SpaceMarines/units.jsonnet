@@ -1,12 +1,10 @@
 {}
-+ (import './units/PrimarisCaptain.libsonnet')
 + (import './units/CaptaininGravisArmour.libsonnet')
 + (import './units/CaptaininPhobosArmour.libsonnet')
 + (import './units/CaptaininTerminatorArmour.libsonnet')
 + (import './units/Captain.libsonnet')
 + (import './units/CaptainwithJumpPack.libsonnet')
 + (import './units/CaptainonBike.libsonnet')
-+ (import './units/PrimarisLieutenant.libsonnet')
 + (import './units/LieutenantinReiverArmour.libsonnet')
 + (import './units/LieutenantinPhobosArmour.libsonnet')
 + (import './units/Lieutenant.libsonnet')

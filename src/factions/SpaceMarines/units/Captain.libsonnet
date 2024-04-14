@@ -45,6 +45,7 @@
       "Character",
       "Grenades",
       "Imperium",
+      "Tacticus",
       "Captain"
     ],
     "weapons": {
@@ -64,52 +65,18 @@
             }
           }
         },
-        "grav-pistol": {
+        "heavy bolt pistol": {
           "profiles": {
             "": {
               "abilities": [
-                "ANTI-VEHICLE 2+",
                 "PISTOL"
               ],
-              "range": 12,
+              "range": 18,
               "attacks": 1,
               "hitSkill": 2,
               "strength": 4,
               "ap": -1,
-              "damage": 2
-            }
-          }
-        },
-        "hand flamer": {
-          "profiles": {
-            "": {
-              "abilities": [
-                "IGNORES COVER",
-                "PISTOL",
-                "TORRENT"
-              ],
-              "range": 12,
-              "attacks": "D6",
-              "hitSkill": null,
-              "strength": 3,
-              "ap": 0,
               "damage": 1
-            }
-          }
-        },
-        "inferno pistol": {
-          "profiles": {
-            "": {
-              "abilities": [
-                "MELTA 2",
-                "PISTOL"
-              ],
-              "range": 6,
-              "attacks": 1,
-              "hitSkill": 2,
-              "strength": 8,
-              "ap": -4,
-              "damage": "D3"
             }
           }
         },
@@ -121,10 +88,23 @@
               "attacks": 2,
               "hitSkill": 2,
               "strength": 4,
-              "ap": 0,
+              "ap": -1,
               "damage": 2
             }
           }
+        },
+        "neo-volkite pistol": {
+          "profiles": {
+            "": {
+              "abilities": ["DEVESTATING WOUNDS", "PISTOL"],
+              "range": 12,
+              "attacks": 1,
+              "hitSkill": 2,
+              "strength": 5,
+              "ap": 0,
+              "damage": 2,
+            },
+          },
         },
         "plasma pistol": {
           "profiles": {
@@ -155,19 +135,6 @@
         }
       },
       "melee": {
-        "Astartes chainsword": {
-          "profiles": {
-            "": {
-              "abilities": [],
-              "range": null,
-              "attacks": 7,
-              "hitSkill": 2,
-              "strength": 4,
-              "ap": -1,
-              "damage": 1
-            }
-          }
-        },
         "close combat weapon": {
           "profiles": {
             "": {
@@ -178,6 +145,19 @@
               "strength": 4,
               "ap": 0,
               "damage": 1
+            }
+          }
+        },
+        "master-crafted power weapon": {
+          "profiles": {
+            "": {
+              "abilities": [],
+              "range": null,
+              "attacks": 6,
+              "hitSkill": 2,
+              "strength": 5,
+              "ap": -2,
+              "damage": 2
             }
           }
         },
@@ -193,49 +173,6 @@
               "damage": 2
             }
           }
-        },
-        "relic weapon": {
-          "profiles": {
-            "": {
-              "abilities": [],
-              "range": null,
-              "attacks": 6,
-              "hitSkill": 2,
-              "strength": 5,
-              "ap": -2,
-              "damage": 2
-            }
-          }
-        },
-        "thunder hammer": {
-          "profiles": {
-            "": {
-              "abilities": [
-                "DEVASTATING WOUNDS"
-              ],
-              "range": null,
-              "attacks": 5,
-              "hitSkill": 3,
-              "strength": 8,
-              "ap": -2,
-              "damage": 2
-            }
-          }
-        },
-        "twin lightning claws": {
-          "profiles": {
-            "": {
-              "abilities": [
-                "TWIN-LINKED"
-              ],
-              "range": null,
-              "attacks": 7,
-              "hitSkill": 2,
-              "strength": 5,
-              "ap": -2,
-              "damage": 1
-            }
-          }
         }
       }
     },
@@ -244,100 +181,15 @@
         "lose": [
           {
             "num": 1,
-            "type": "master-crafted boltgun"
-          }
-        ],
-        "gain": [
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "combi-weapon"
-              }
-            ],
-            "ruleIdx": 1
+            "type": "bolt pistol"
           },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "grav-pistol"
-              }
-            ]
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "hand flamer"
-              }
-            ]
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "inferno pistol"
-              }
-            ]
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "plasma pistol"
-              }
-            ]
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "storm bolter"
-              }
-            ],
-            "ruleIdx": 1
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "power fist"
-              }
-            ]
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "relic shield"
-              }
-            ],
-            "ruleIdx": 0
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "relic weapon"
-              }
-            ]
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "thunder hammer"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "lose": [
           {
             "num": 1,
-            "type": "Astartes chainsword"
+            "type": "master-crafted boltgun"
+          },
+          {
+            "num": 1,
+            "type": "close combat weapon"
           }
         ],
         "gain": [
@@ -345,37 +197,88 @@
             "gear": [
               {
                 "num": 1,
-                "type": "close combat weapon"
+                "type": "heavy bolt pistol",
+              },
+              {
+                "num": 1,
+                "type": "power fist",
+              },
+            ],
+          },
+          {
+            "gear": [
+              {
+                "num": 1,
+                "type": "heavy bolt pistol",
+              },
+              {
+                "num": 1,
+                "type": "master-crafted power weapon",
+              },
+            ],
+          },
+          {
+            "gear": [
+              {
+                "num": 1,
+                "type": "neo-volkite pistol",
+              },
+              {
+                "num": 1,
+                "type": "power fist",
+              },
+            ],
+          },
+          {
+            "gear": [
+              {
+                "num": 1,
+                "type": "neo-volkite pistol",
+              },
+              {
+                "num": 1,
+                "type": "master-crafted power weapon",
+              },
+            ],
+          },
+          {
+            "gear": [
+              {
+                "num": 1,
+                "type": "plasma pistol",
+              },
+              {
+                "num": 1,
+                "type": "power fist",
+              },
+            ],
+          },
+          {
+            "gear": [
+              {
+                "num": 1,
+                "type": "plasma pistol",
+              },
+              {
+                "num": 1,
+                "type": "master-crafted power weapon",
+              },
+            ],
+          },
+          {
+            "gear": [
+              {
+                "num": 1,
+                "type": "heavy bolt pistol"
+              },
+              {
+                "num": 1,
+                "type": "master-crafted power weapon"
               },
               {
                 "num": 1,
                 "type": "relic shield"
               }
-            ],
-            "ruleIdx": 0
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "power fist"
-              }
-            ]
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "relic weapon"
-              }
-            ]
-          },
-          {
-            "gear": [
-              {
-                "num": 1,
-                "type": "thunder hammer"
-              }
             ]
           }
         ]
@@ -384,11 +287,7 @@
         "lose": [
           {
             "num": 1,
-            "type": "master-crafted boltgun"
-          },
-          {
-            "num": 1,
-            "type": "Astartes chainsword"
+            "type": "close combat weapon"
           }
         ],
         "gain": [
@@ -396,17 +295,22 @@
             "gear": [
               {
                 "num": 1,
-                "type": "twin lightning claws"
+                "type": "master-crafted power weapon"
+              }
+            ]
+          },
+          {
+            "gear": [
+              {
+                "num": 1,
+                "type": "power fist"
               }
             ]
           }
         ]
       }
     ],
-    "optionRules": [
-      "Maximum one per model.",
-      "The profile for this weapon can be found on the Adeptus Astartes Armoury card."
-    ],
+    "optionRules": [],
     "wargear": [
       {
         "num": 1,
@@ -418,7 +322,7 @@
       },
       {
         "num": 1,
-        "type": "Astartes chainsword"
+        "type": "close combat weapon"
       }
     ],
     "composition": [
@@ -430,10 +334,20 @@
       }
     ],
     "leader": [
-      "Assault Squad",
-      "Command Squad",
-      "Tactical Squad",
-      "Vanguard Veteran Squad"
+      "Assault Intercessor Squad",
+      "Bladeguard Veteran Squad", //*
+      "Company Heroes",
+      "Hellblaster Squad", //*
+      "Infernus Squad",
+      "Intercessor Squad",
+      "Sternguard Veteran Squad",
+      "Tactical Squad"
+      // *This model cannot be attached to a BLADEGUARD VETERAN SQUAD unless
+      // this model is equipped with a relic shield, and cannot be attached to a
+      // HELLBLASTER SQUAD unless this model is equipped with a plasma pistol.
+    ],
+    "leaderRules": [
+      "This model cannot be attached to a Bladeguard Veteran Squad unless it is equipped with a relic shield, and cannot be attached to a Hellblaster Squad unless it is equipped with a plasma pistol."
     ]
   }
 }

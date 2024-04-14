@@ -87,7 +87,7 @@
               "hitSkill": 3,
               "strength": 4,
               "ap": -2,
-              "damage": 3
+              "damage": 2
             }
           }
         },
